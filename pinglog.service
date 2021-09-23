@@ -1,0 +1,13 @@
+# copy this file to /lib/systemd/system/
+
+[Unit]
+Description=PINGLOG NodeJS Application
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/opt/node/apps/pinglog/
+ExecStart=/usr/bin/node /opt/node/apps/pinglog/index.js
+
+[Install]
+WantedBy=multi-user.target

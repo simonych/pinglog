@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
-git pull
-systemctl restart pinglog
+bash "git pull"
+bash "systemctl restart pinglog"

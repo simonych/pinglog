@@ -1,5 +1,4 @@
 #!/bin/bash
 
-chmod 644 ./deploy
-bash "git pull"
-bash "systemctl restart pinglog"
+bash `git pull`
+bash `systemctl restart pinglog`

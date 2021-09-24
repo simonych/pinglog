@@ -1,6 +1,6 @@
 const restify = require('restify');
 
-//////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
 const pinoms = require('pino-multi-stream')
 const childProcess = require('child_process')
 const stream = require('stream')
@@ -25,7 +25,7 @@ const child = childProcess.spawn(process.execPath, [
 ], { cwd, env })
 
 logThrough.pipe(child.stdin)
-////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
 
 function respond(req, res, next) {
   res.send('hello ' + req.params.name);
